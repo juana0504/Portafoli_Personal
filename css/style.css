@@ -81,12 +81,13 @@ body {
 }
 
 /* Texto */
-.col-md-5{
+.nombre{
   max-width: 100%;
   padding-right: 100px;
+  margin-top: 50px;
 }
 
-.col-md-5 h1 {
+.nombre h1 {
     font-family: 'Inter';
     font-size: 26px;
     margin-bottom: 20px;
@@ -99,7 +100,7 @@ body {
     font-weight: bold;
 }
 
-.col-md-5 p {
+.nombre p {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 25px;
@@ -124,22 +125,20 @@ body {
 }
 
 /* Imagen */
-.col-md-7 {
+.compu{
   display: flex;
   justify-content: center; /* eje horizontal */
   align-items: center;     /* eje vertical */
   padding-left: 100px;
 }
 
-.hero-image {
-  width: 100%;
-  display: flex;
+.img-fluid {
+  max-width: 290%;
+  height: auto;
+  display: center;
   justify-content: center;
 }
 
-.img-fluid {
-  max-width: 650px;
-}
 
 /* Sección principal */
 .perfil {
@@ -162,36 +161,30 @@ body {
   flex-wrap: wrap; /* para que en móvil se acomode */
 }
 
-.col-md-6 {
+.imag {
   margin-top: 90px; /* baja la sesion */
   max-width: 600px;
 }
 
 /* Imagen */
-.col-md-6 img{
-  display: inline-block;
-  padding: 10px; /* separación entre la imagen y el marco */
-  border-radius: 12px;
-  background: #00e5ff; /* color del fondo interno */
-  margin-left: -40px; /* mueve más a la izquierda */
-}
-.col-md-6 img{
+
+.imag{
    width: 280px;
   border-radius: 8px;
   display: block; 
 }
 
 /* Texto */
-.col-md-6 h1 {
+.datos h1 {
   text-align: center;
-  margin-top: 40px; /* baja solo el texto */
+  margin-top: 60px; /* baja solo el texto */
   font-size: 2rem;
   margin-bottom: 15px;
   color: #fff;
 }
 
-.col-md-6 p {
-  margin-top: 40px; /* baja solo el texto */
+.datos p {
+  margin-top: 60px; /* baja solo el texto */
   line-height: 1.6;
   font-size: 1rem;
   color: #ddd;
