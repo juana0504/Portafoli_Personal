@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1322;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ==== NAVBAR PERSONALIZADA ==== */
+.navbar {
+  background-color: #1b1322 !important;  /* Fondo oscuro */
+  padding: 15px 50px;                   /* Espaciado */
+}
+
+/* Marca (logo o texto) */
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: white !important;   /* Texto blanco */
+  font-weight: bold;
+  margin-right: 25px;        /* Separación entre enlaces */
+  transition: color 0.3s;
+}
+
+/* Hover */
+.navbar-nav .nav-link:hover {
+  color: #00cfff !important; /* Azul al pasar el mouse */
+}
+
+/* Link activo */
+.navbar-nav .nav-link.active {
+  color: #00cfff !important; /* Azul para el que está activo */
+}
+
+/* Deshabilitado */
+.navbar-nav .nav-link.disabled {
+  color: #888 !important;
+}
+.navbar {
+  background-color: #1b1322 !important;
+  border-bottom: 2px solid #000000; /* Línea azul brillante */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative; /* necesario para que las figuras se posicionen dentro */
+    background: linear-gradient(to bottom, #1b1322 0%, #241b30 100%);
+    padding: 80px 0;
+    overflow: hidden; /* oculta lo que sobresalga */
+}
+
+/* Figuras */
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,207,255,0.7) 0%, rgba(0,207,255,0.7) 70%);
+  filter: blur(20px);
+  z-index: 1;
+}
+
+/* Arriba izquierda */
+.circle-top {
+  top: -80px;
+  left: -80px;
+}
+
+/* Abajo derecha */
+.circle-bottom {
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Texto */
+.col-md-5{
+  max-width: 100%;
+  padding-right: 100px;
+}
+
+.col-md-5 h1 {
+    font-family: 'Inter';
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #120e16;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.col-md-5 p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons a {
+    background-color: #3cc7f5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons a:hover {
+    background-color: #2aaed9;
+}
+
+/* Imagen */
+.col-md-7 {
+  display: flex;
+  justify-content: center; /* eje horizontal */
+  align-items: center;     /* eje vertical */
+  padding-left: 100px;
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 650px;
+}
+
+/* Sección principal */
+.perfil {
+  position: relative; /* necesario para ubicar los círculos */
+  padding: 80px 20px;
+  color: white;
+  overflow: hidden; /* oculta lo que sobresalga */
+  padding: 60px 20px;
+  color: white;
+}
+
+/* Contenedor con flex */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* espacio entre imagen y texto */
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap; /* para que en móvil se acomode */
+}
+
+.col-md-6 {
+  margin-top: 90px; /* baja la sesion */
+  max-width: 600px;
+}
+
+/* Imagen */
+.col-md-6 img{
+  display: inline-block;
+  padding: 10px; /* separación entre la imagen y el marco */
+  border-radius: 12px;
+  background: #00e5ff; /* color del fondo interno */
+  margin-left: -40px; /* mueve más a la izquierda */
+}
+.col-md-6 img{
+   width: 280px;
+  border-radius: 8px;
+  display: block; 
+}
+
+/* Texto */
+.col-md-6 h1 {
+  text-align: center;
+  margin-top: 40px; /* baja solo el texto */
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.col-md-6 p {
+  margin-top: 40px; /* baja solo el texto */
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ddd;
+}
