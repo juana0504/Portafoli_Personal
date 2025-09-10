@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "inter", sans-serif;
+}
+
+
+p,a,button,li,label,input,select,textarea,span{
+    font-family: "roboto", sans-serif;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -32,18 +46,12 @@ body {
   color: #00cfff !important; /* Azul al pasar el mouse */
 }
 
-/* Link activo */
-.navbar-nav .nav-link.active {
-  color: #00cfff !important; /* Azul para el que está activo */
-}
-
 /* Deshabilitado */
 .navbar-nav .nav-link.disabled {
   color: #888 !important;
 }
 .navbar {
-  background-color: #1b1322 !important;
-  border-bottom: 2px solid #000000; /* Línea azul brillante */
+  background: transparent;
 }
 
 .hero {
@@ -112,12 +120,12 @@ body {
 }
 
 .buttons a {
-    background-color: #3cc7f5;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+  background-color: #3cc7f5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .buttons a:hover {
@@ -140,3 +148,73 @@ body {
 }
 
 
+/* Perfil */
+.perfil{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative; /* necesario para que las figuras se posicionen dentro */
+    background: linear-gradient(to bottom, #1b1322 0%, #241b30 100%);
+    padding: 80px 0;
+    overflow: hidden; /* oculta lo que sobresalga */
+}
+
+.imagen{
+  background-color: #3cc7f5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 400px;
+  height: 510px;
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+  left: 109px;
+  filter: blur(5px);
+}
+
+.foto{
+  position: relative;
+  z-index: 2;
+}
+
+.datos{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.datos p{
+  margin-top: 50px;
+}
+
+/* estilos de habilidades */
+.habilidades{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative; /* necesario para que las figuras se posicionen dentro */
+    background: linear-gradient(to bottom, #1b1322 0%, #241b30 100%);
+    padding: 80px 0;
+    overflow: hidden; /* oculta lo que sobresalga */
+}
+
+.habilidades h1{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.cont{
+  background-color: #3cc7f5;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 60px 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
